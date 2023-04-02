@@ -1,0 +1,27 @@
+.list {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.item {
+    border: 1px solid #8266e7;
+    border-radius: 5px;
+    padding: 15px;
+
+    color: #8266e7d4;
+}
+
+.item+.item {
+    margin-top: 15px;
+}
+
+.title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8266e7;
+}
+
+.text {
+    color: rgb(122, 101, 143);
+    padding-left: 10px;
+    padding-right: 10px;
+}

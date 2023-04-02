@@ -1,0 +1,68 @@
+.moviecart {
+    max-width: 1200px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    color: rgb(47, 47, 47);
+
+
+    &__link_back {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        text-decoration: none;
+        color: gray;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.moviecart_info {
+    display: flex;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__img {
+        margin-right: 10px;
+    }
+
+    &__title {}
+
+    &__score {}
+
+    &__overview_title {}
+
+    &__overview_text {}
+
+    &__genres_title {}
+
+    &__genres_text {}
+}
+
+.additional {
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+
+    &__title {}
+
+    &__list {
+        display: flex;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item+&__item {
+        margin-left: 10px;
+    }
+
+    &__link {
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+        text-decoration: none;
+
+        color: gray;
+    }
+}

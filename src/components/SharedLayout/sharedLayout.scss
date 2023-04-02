@@ -1,0 +1,39 @@
+body {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #8266e7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 4px 10px rgb(189, 189, 189);
+
+    font-size: 20px;
+}
+
+.navlist {
+    display: flex;
+    list-style-type: none;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 0;
+}
+
+.navItem {}
+
+.navItem+.navItem {
+    padding-left: 10px;
+}
+
+.navlink {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.active {
+    color: #FFC75D;
+
+    border-bottom: 1px solid #FFC75D;
+}

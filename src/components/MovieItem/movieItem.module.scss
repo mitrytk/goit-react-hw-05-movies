@@ -1,0 +1,35 @@
+.item {
+    box-sizing: border-box;
+    padding: 10px;
+    display: block;
+    width: 224px;
+    margin: 10px;
+    background-color: #efecec;
+    border-radius: 6px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(79, 78, 78);
+}
+
+.link:hover,
+.link:focus {
+    transform: translate(1.1);
+}
+
+.itemImg {
+    width: 205px;
+    border-radius: 3px;
+}
+
+.nameMovie {
+    padding-top: 4px;
+    box-sizing: border-box;
+    margin: 0;
+
+    width: 100%;
+
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
