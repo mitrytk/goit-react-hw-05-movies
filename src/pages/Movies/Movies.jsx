@@ -41,7 +41,7 @@ const Movies = () => {
           {movies.map(({ id, title, poster_path }) => (
             <MovieItem
               key={id}
-              id={toString(id)}
+              id={`${id}`}
               title={title}
               poster_path={poster_path}
               location={location}
