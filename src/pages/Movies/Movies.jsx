@@ -19,8 +19,10 @@ const Movies = () => {
       return;
     }
 
-    onSubmit(query.trim());
-  }, [searchParams, query]);
+    api.fetchSearchMovies(page, query.trim()).then(data => {
+      setMovies(data.results);
+    });
+  }, [searchParams, query, page]);
 
   const onSubmit = search => {
     setSearchParams({ query: search });
