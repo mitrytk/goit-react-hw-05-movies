@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import api from '../../services/movies-api';
 import style from './home.module.scss';
 
-import MovieItem from 'components/MovieItem/MovieItem';
 import MovieList from 'components/MovieList/MovieList';
 
 const Home = () => {
@@ -17,11 +16,7 @@ const Home = () => {
   return (
     <section className={style.section}>
       <h1 className={style.title}>Trending today</h1>
-      <MovieList>
-        {movies.map(({ id, title, name, poster_path }) => (
-          <MovieItem key={id} id={`movies/${id}`} location={location} poster_path={poster_path} title={title ?? name}/>
-        ))}
-      </MovieList>
+      <MovieList movies={movies} location={location}/>
     </section>
   );
 };

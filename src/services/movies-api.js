@@ -12,9 +12,9 @@ function fetchPopularMovies() {
   });
 }
 
-function fetchSearchMovies(page, search) {
+function fetchSearchMovies(search) {
   return fetch(
-    `https://api.themoviedb.org/3/search/movie?api_key=${KEY_API}&language=en-US&query=${search}&page=${page}&include_adult=false`
+    `https://api.themoviedb.org/3/search/movie?api_key=${KEY_API}&language=en-US&query=${search}&page=1&include_adult=false`
   ).then(res => {
     if (res.ok) {
       return res.json();
